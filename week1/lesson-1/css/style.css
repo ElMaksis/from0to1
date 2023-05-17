@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+.greeting-title {
+    font-size: 60px;
+}
+
+.greeting-photo {
+    height: 400px;
+}
+
+.greeting-desc {
+    font-weight: 700;
+    font-size: 24px;
+    font-style: italic;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.greeting-link {
+    padding: 15px 10px;
+    border-radius: 7px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
