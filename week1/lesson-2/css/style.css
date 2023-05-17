@@ -1,0 +1,152 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.head-logo {
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px 20px;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FA8072;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.main-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.main-text {
+    text-indent: 20px;
+}
+
+.marked-text {
+    color: #FA8072;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.alltrails {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.main-list li {
+    margin-left: 35px;
+}
+
+.top-link {
+    cursor: pointer;
+    position: fixed;
+    right: 100px;
+    bottom: 70px;
+}
+
+.top-arrow {
+    height: 70px;
+    transition: all ease .3s;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px black;
+}
+
+.top-arrow:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 8px black;
+}
+
+.top-arrow:active {
+    transform: scale(1);
+    box-shadow: 3px 3px 5px black;
+}
+
+/* pseudo-element decoration */
+
+.decor-top,
+.decor-bottom {
+    position: relative;
+    height: 27px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.decor-bottom {
+    margin-top: -5px;
+}
+
+.frame-pulse {
+    position: absolute;
+    left: 60px;
+    width: 38px;
+    height: 100%;
+    background-image: url(../images/pulse-before.png);
+    background-repeat: no-repeat;
+}
+
+.frame-pulse::before {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 1px;
+    width: 60px;
+    height: 100%;
+    background-image: url(../images/framing-line.png);
+    background-repeat: repeat-x;
+}
+
+.frame-pulse::after {
+    content: '';
+    position: absolute;
+    left: 38px;
+    width: 1000px;
+    height: 100%;
+    background-image: url(../images/framing-line.png);
+    background-repeat: repeat-x;
+}
+
+.frame-pulse--bottom {
+    position: absolute;
+    right: 60px;
+    width: 38px;
+    height: 100%;
+    background-image: url(../images/pulse-before.png);
+    background-repeat: no-repeat;
+}
+
+.frame-pulse--bottom::before {
+    content: '';
+    position: absolute;
+    right: -60px;
+    width: 60px;
+    height: 100%;
+    background-image: url(../images/framing-line.png);
+    background-repeat: repeat-x;
+}
+
+.frame-pulse--bottom::after {
+    content: '';
+    position: absolute;
+    right: 38px;
+    top: 1px;
+    width: 1000px;
+    height: 100%;
+    background-image: url(../images/framing-line.png);
+    background-repeat: repeat-x;
+}
