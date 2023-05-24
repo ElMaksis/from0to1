@@ -1,0 +1,261 @@
+body {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #242121;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.6px;
+    color: #01353E;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.title:after {
+    content: '/';
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0.6px;
+    color: #00B2A0;
+    position: absolute;
+    top: 3px;
+}
+
+.header {
+    background-image: url('../images/header-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    align-self: flex-start;
+    padding-top: 35px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo__img {
+    height: 63px;
+    width: 60px;
+}
+
+.nav__list {
+    display: flex;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+}
+
+.nav__item {
+    padding-bottom: 5px;
+    transition: border 1s;
+}
+
+.nav__item:hover {
+    border-bottom: 1px solid #00B2A0;
+}
+
+.nav__item+.nav__item {
+    margin-left: 45px;
+}
+
+.header__front {
+    text-align: center;
+}
+
+.header__title {
+    color: #0D302C;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 235px
+}
+
+.header__sub-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.header__wrap-icon {
+    margin-bottom: 93px;
+}
+
+.header__icon {
+    height: 68px;
+}
+
+.about {
+    padding: 190px 0 170px;
+    text-align: center;
+}
+
+.about__desc {
+    display: flex;
+    text-align: start;
+}
+
+.about__col {
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__text {
+    max-width: 480px;
+    padding-bottom: 30px;
+}
+
+.receive {
+    padding: 200px 0 170px;
+    background-color: #F8F8F8;
+}
+
+.receive__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.receive-item {
+    flex-basis: 350px;
+    background-position: 25% 0%;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.receive-item-1 {
+    background-image: url('../images/living.svg');
+}
+
+.receive-item-2 {
+    background-image: url('../images/fly.svg');
+}
+
+.receive-item-3 {
+    background-image: url('../images/learn.svg');
+}
+
+.receive-item__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 0.6px;
+    padding: 0 0 15px 140px;
+    min-height: 50px;
+    text-transform: uppercase;
+}
+
+.receive-item-1 .receive-item__title {
+    padding: 10px 0 25px 140px;
+}
+
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic {
+    width: 350px;
+    flex-shrink: 1;
+}
+
+.statistic__item span::before {
+    content: '';
+    background-image: url('../images/wave.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    display: inline-block;
+    height: 25px;
+}
+
+.statistic__item-1 span::before {
+    content: '';
+    width: calc(85% - 40px);
+}
+
+.statistic__item-2 span::before {
+    content: '';
+    width: calc(95% - 40px);
+
+}
+
+.statistic__item-3 span::before {
+    content: '';
+    width: calc(99% - 40px);
+}
+
+.statistic__item span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.method__desc {
+    max-width: 600px;
+    flex-shrink: 3;
+    margin-left: 20px;
+}
+
+.method__desc p {
+    padding-bottom: 30px;
+}
+
+.peak {
+    background-image: url('../images/peak.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding: 200px 0;
+}
+
+.peak__inner {
+    max-width: 510px;
+    margin-right: auto;
+}
+
+.peak__title {
+    white-space: nowrap;
+}
+
+.peak__desc {
+    padding-bottom: 30px;
+}
