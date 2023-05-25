@@ -25,6 +25,7 @@ body {
     margin-bottom: 100px;
     position: relative;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .title:after {
@@ -37,6 +38,9 @@ body {
     position: absolute;
     top: 3px;
 }
+
+/* =============== HEADER  ================ */
+
 
 .header {
     background-image: url('../images/header-bg.jpg');
@@ -120,6 +124,8 @@ body {
     height: 68px;
 }
 
+/* ================== BLOCK ABOUT ================= */
+
 .about {
     padding: 190px 0 170px;
     text-align: center;
@@ -141,6 +147,10 @@ body {
     max-width: 480px;
     padding-bottom: 30px;
 }
+
+
+/* ===================  BLOCK RECEIVE ================= */
+
 
 .receive {
     padding: 200px 0 170px;
@@ -239,6 +249,10 @@ body {
     padding-bottom: 30px;
 }
 
+
+/* =================  BLOCK PEACK  ================= */
+
+
 .peak {
     background-image: url('../images/peak.jpg');
     background-position: top right;
@@ -258,4 +272,124 @@ body {
 
 .peak__desc {
     padding-bottom: 30px;
+}
+
+/* ==================  BLOCK GALLERY ================= */
+
+.gallery {}
+
+.gallery__inner {}
+
+.gallery__menu {
+    display: flex;
+    margin: 212px 0 50px;
+}
+
+.gallery__menu-item {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    margin-right: 20px;
+    text-decoration: uppercase;
+    transition: color .3s;
+}
+
+.gallery__menu-item:hover {
+    color: #00B2A0;
+    transform: scale(1.1);
+}
+
+.gallery__menu-link {
+    cursor: pointer;
+}
+
+.gallery__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.gallery__item {}
+
+.gallery__image {
+    width: 100%;
+}
+
+.gallery__btn {
+    padding: 24px 90px;
+    border: 1px solid #C4C4C4;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    display: block;
+    margin: 50px auto 200px;
+}
+
+.gallery__btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.quote {
+    background: #F8F8F8;
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.blockquote {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+}
+
+.blockquote__author {
+    font-style: italic;
+    max-width: 870px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.gallery__video {
+    margin: 200px 0;
+    height: 600px;
+    background-image: url('../images/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video__btn {}
+
+.gallery__numbers {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 200px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.numbers-item__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.6px;
+    color: #01353E;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.numbers-item__title span {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    color: #242121;
 }

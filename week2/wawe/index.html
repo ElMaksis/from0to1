@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/myReset.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Wawe</title>
 </head>
@@ -233,11 +234,105 @@
                 </div>
             </div>
         </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__inner">
+                    <h3 class="title">ГАЛЕРЕЯ</h3>
+                    <ul class="gallery__menu">
+                        <li class="gallery__menu-item">
+                            <a class="gallery__menu-link" data-filter="all">
+                                ВСЕ
+                            </a>
+                        </li>
+                        <li class="gallery__menu-item">
+                            <a class="gallery__menu-link" data-filter=".category-a">
+                                ТУРИСТЫ
+                            </a>
+                        </li>
+                        <li class="gallery__menu-item">
+                            <a class="gallery__menu-link" data-filter=".category-b">
+                                ПРИРОДА
+                            </a>
+                        </li>
+                        <li class="gallery__menu-item">
+                            <a class="gallery__menu-link" data-filter=".category-c">
+                                ПРОФИ
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="gallery__container">
+                        <div class="gallery__item mix category-b category-c">
+                            <img class="gallery__image" src="images/gallery/1.jpg" alt="image of surfing">
+                        </div>
+                        <div class="gallery__item mix category-a">
+                            <img class="gallery__image" src="images/gallery/2.jpg" alt="image of surfing">
+                        </div>
+                        <div class="gallery__item mix category-c">
+                            <img class="gallery__image" src="images/gallery/3.jpg" alt="image of surfing">
+                        </div>
+                        <div class="gallery__item mix category-a">
+                            <img class="gallery__image" src="images/gallery/4.jpg" alt="image of surfing">
+                        </div>
+                        <div class="gallery__item mix category-b">
+                            <img class="gallery__image" src="images/gallery/5.jpg" alt="image of surfing">
+                        </div>
+                        <div class="gallery__item mix category-a category-b">
+                            <img class="gallery__image" src="images/gallery/6.jpg" alt="image of surfing">
+                        </div>
+                    </div>
+                    <button class="gallery__btn">ПОКАЗАТЬ ЕЩЕ</button>
+
+                    <div class="quote">
+                        <blockquote class="blockquote">
+                            «Если сомневаешься – иди катайся.»
+                        </blockquote>
+                        <p class="blockquote__author">
+                            Нэт Янг, первый Чемпион Мира по сёрфингу
+                        </p>
+                    </div>
+
+                    <div class="gallery__video">
+                        <a class="gallery__link" data-fancybox href="https://www.youtube.com/watch?v=hA28YkbpJb0">
+                            <img class="video__btn" src="images/play-video_icon.svg" alt="play video">
+                        </a>
+                    </div>
+
+                    <div class="gallery__numbers">
+                        <h5 class="numbers-item__title">
+                            450
+                            <span>туристов</span>
+                        </h5>
+                        <h5 class="numbers-item__title">
+                            2500
+                            <span>часов катания</span>
+                        </h5>
+                        <h5 class="numbers-item__title">
+                            10
+                            <span>проф. тренеров</span>
+                        </h5>
+                        <h5 class="numbers-item__title">
+                            365
+                            <span>дней в году</span>
+                        </h5>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+        </section>
 
 
 
 
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
